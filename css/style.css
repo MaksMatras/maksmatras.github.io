@@ -1,0 +1,69 @@
+/* Стили для страниц */
+body{
+background: #2c2d34;
+color:white;
+}
+.one ul {
+	background: white;
+	display: flex;
+	align-items: center;
+}
+.one li {
+	display: inline;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.one img {
+	margin-left: 50px; 
+}
+.one ul li:nth-child(2) {
+  margin-right: 100px;
+}
+.one a {
+	text-decoration: none;
+  	color: black;
+}
+.one a:hover {
+	color: red;
+}
+.one h3 {
+  	color: black;
+}
+
+.big-text {
+ 	font-size: 48px; 
+}
+
+/* Стили для контейнера */
+.container {
+  	display: flex;
+  	flex-wrap: wrap;
+}
+
+/* Стили для каждой плитки */
+.tile {
+  	width: 200px;
+  	height: 260px;
+  	margin: 10px;
+  	padding: 20px;
+  	border: 1px solid #000;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: space-between;
+}/* Стили для изображений внутри плитки */
+.tile img {
+  	width: 100%;
+  	height: 70%;
+  	object-fit: cover; 
+}
+/* Стили для ссылок внутри плитки */
+
+.tile a {
+	text-decoration: none;
+    	color: white;
+
+}
+.tile a:visited {
+    	color: white;
+}

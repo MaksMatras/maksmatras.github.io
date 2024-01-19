@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<nav class="one">
+	<ul align="center">
+	<li><a href="index.html"><img src="images/logo.png" height="70"></a></li>
+	<li><h3><a href="index.html">КАПИБАРА ХОЛМС</a></h3></li>
+	<li><h3><a href="index.html">ГЛАВНАЯ</a></h3></li>
+	<li><h3><a href="about.html">О&nbsp;НАС</a></h3></li>
+	<li><h3><a href="service.html">УСЛУГИ</a></h3></li>
+	<li><h3><a href="contacts.html">КОНТАКТЫ</a></h3></li>
+	</ul>
+</nav>
+
+<h2 align="center">Форма регистрации</h2>
+
+<form action="reg.php" method="post">
+<table align="center">
+	<tr>
+          <td>Введите ваш электронный адрес:</td>
+          <td>
+            <input name="email" type="email" required /><sup style="color: red">*</sup>
+          </td>
+	</tr>
+        <tr>
+          <td>Введите ваш пароль:</td>
+          <td>
+            <input name="password" type="password" required /><sup style="color: red">*</sup>
+          </td>
+        </tr>
+        <tr>
+          <td>Подтвердите ваш пароль:</td>
+          <td>
+            <input name="PasswordTrue" type="password" required /><sup style="color: red">*</sup>
+          </td>
+        </tr>	
+	<tr>
+          <td>
+            <input type="submit" value="Регистрация" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="reset" value="Сбросить" />
+          </td>
+        </tr>
+      </table>
+</form>
+</body>
+</html>

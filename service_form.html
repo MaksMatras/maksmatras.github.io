@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<nav class="one">
+	<ul align="center">
+	<li><a href="index.html"><img src="images/logo.png" height="70"></a></li>
+	<li><h3><a href="index.html">КАПИБАРА ХОЛМС</a></h3></li>
+	<li><h3><a href="index.html">ГЛАВНАЯ</a></h3></li>
+	<li><h3><a href="about.html">О&nbsp;НАС</a></h3></li>
+	<li><h3><a href="service.html">УСЛУГИ</a></h3></li>
+	<li><h3><a href="contacts.html">КОНТАКТЫ</a></h3></li>
+	</ul>
+</nav>
+
+<h1 align="center">Оформление заказа</h1>
+<form name="myForm" method="post" action="reader.php" onsubmit="return validateForm()">
+      <table align="center">
+	<tr>
+          <td>Введите ваш электронный адрес:</td>
+          <td>
+            <input name="Email" type="email" required /><sup style="color: red">*</sup>
+          </td>
+        </tr>
+        <tr>
+          <td>Введите тему вашей работы, а так же краткое описание:</td>
+          <td>
+		<textarea name="Info" value="Введите ваш вопрос"></textarea><sup style="color: red">*</sup>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Отправить" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="reset" value="Сбросить" />
+          </td>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>

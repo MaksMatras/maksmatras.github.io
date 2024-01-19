@@ -1,29 +1,3 @@
-@media screen and (max-width: 600px) {
-.one ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .one li {
-    margin: 10px 0;
-  }
-
-  .one img {
-    margin-left: 10px;
-  }
-
-  .big-text {
-    font-size: 24px;
-  }
-
-  .tile {
-    width: 100%;
-    height: auto;
-  }
-
-  .tile img {
-    height: 50%;
-  }}
 /* Стили для страниц */
 body{
 	background: #2c2d34;
@@ -56,7 +30,8 @@ body{
 
 .one h3 {
   	color: black;
-}.big-text {
+}
+.big-text {
  	font-size: 48px; 
 }
 
@@ -77,19 +52,51 @@ body{
   	flex-direction: column;
   	align-items: center;
   	justify-content: space-between;
-}/* Стили для изображений внутри плитки */
+}
+/* Стили для изображений внутри плитки */
 .tile img {
   	width: 100%;
   	height: 70%;
   	object-fit: cover; 
 }
 /* Стили для ссылок внутри плитки */
-
 .tile a {
 	text-decoration: none;
     	color: white;
-
 }
 .tile a:visited {
     	color: white;
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 600px) {
+  .one.navbar {
+    background: white;
+  }
+
+  .one.navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .one.navbar li {
+    margin: 10px 0;
+  }
+
+  .one.navbar img {
+    margin-left: 10px;
+  }
+
+  .big-text {
+    font-size: 24px;
+  }
+
+  .tile {
+    width: 100%;
+    height: auto;
+  }
+
+  .tile img {
+    height: 50%;
+  }
 }
